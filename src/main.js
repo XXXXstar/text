@@ -7,7 +7,10 @@ import './js/config'
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+//全局的配置
+import './modules/config'
+
+ // eslint-disable no-new 
 new Vue({
   el: '#app',
   router,

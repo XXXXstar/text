@@ -11,7 +11,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+<<<<<<< HEAD
         '/Service': {
+=======
+            '/Service': {
+>>>>>>> c5b8c4fd4699c252d7064299b3d1e6ba70f97e8e
             target: 'https://m.mtime.cn',
             changeOrigin: true,
             pathRewrite: {
@@ -19,7 +23,10 @@ module.exports = {
             }
         }
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5b8c4fd4699c252d7064299b3d1e6ba70f97e8e
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
