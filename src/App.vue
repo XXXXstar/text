@@ -1,23 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <app-serch></app-serch>
+  <!--   <app-serch></app-serch>
+ --><app-points></app-points>
+    <app-scollimg></app-scollimg>
+    <mall-act></mall-act>
   </div>
 </template>
 
 <script>
+import AppSerch from './components/serch.vue'
+import AppPoints from './components/AppPoints.vue'
+import AppScollimg from './components/scollImg.vue'
+import MallAct from './components/mall_act.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    AppSerch,
+    AppPoints,
+    AppScollimg,
+    MallAct
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display:flex;
+  flex-direction: column;
 }
 </style>
