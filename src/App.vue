@@ -1,23 +1,36 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!-- <home></home> -->
+    <router-view></router-view>
+    <hop-show></hop-show>
+    <foot></foot>
+    <goods-nav></goods-nav>
+    <classify></classify>
   </div>
 </template>
 
 <script>
+import Home from './components/Home.vue'
+import HopShow from './components/HotShow'
+import Foot from './components/Foot'
+import GoodsNav from './components/GoodsNav'
+import Classify from './components/Classify'
+// import AppHomeBanner from './components/HomeBanner.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Home,
+    HopShow,
+    Foot,
+    GoodsNav,
+    Classify
+ 
+    // AppHomeBanner,
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
